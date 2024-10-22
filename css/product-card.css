@@ -1,0 +1,133 @@
+/*setting background color, font color, font family, and removing default margins*/
+body {
+    background-color: black;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/*setting overall parent container width and height, seperating top margin from window, aligning child elements side by side, rounding corners, setting card background color, adding shadwow for depth*/
+.product-card {
+    height: 500px;
+    width: 800px;
+    margin: 120px auto;
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h5{
+    color: lightgray;
+}
+
+/*setting 50% width for image column*/
+.left-img-col {
+    width: 50%;
+}
+
+/*making image responsive, making image cover area w/o distortion, maintaining aspect ratio, rounding corners*/
+.left-img-col img {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/*setting width for column, padding for right sub-container, adding spacing, aligning items vertically*/
+.right-info-col {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/*setting product subheading font size, adding margin for seperation*/
+h5 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/*setting product heading font size, adding margin for seperation*/
+h3 {
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+/*adding product description font size, adding margin for seperation, adding padding from left side*/
+p {
+    font-size: 14px;
+    margin: 20px 0;
+    padding-left: 50px;
+}
+
+/*arranging child elements vertically in the center*/
+.available-colors {
+    display: flex;
+    align-items: center;
+}
+
+/*changing size, making it an inline element, making margin, making cursor a pointer, adding smooth transition effect*/
+.color-option {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+/*adding base colors*/
+
+.black-color-container {
+    background-color: black;
+}
+
+.red-color-container {
+    background-color: red;
+}
+
+.white-color-container {
+    background-color: tan;
+    
+}
+
+
+/*adding hover effect*/
+.color-option:hover {
+    opacity: 0.7;
+}
+
+/*styling price, making flexbox, aligning button, adding space, adding margins, centering items*/
+.price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+/*styling font size and color of price*/
+h4 {
+    font-size: 32px;
+    color: black;
+}
+
+/*styling button, size, background color, text color, rounded corners, cursor change*/
+.buy-btn {
+    width: 150px; 
+    height: 40px; 
+    background-color: #000000; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+/*adding darker color on hover*/
+.buy-btn:hover {
+    background-color: #218838; 
+}
+
